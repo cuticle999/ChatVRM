@@ -9,12 +9,12 @@ export default function VrmViewer() {
     (canvas: HTMLCanvasElement) => {
       if (canvas) {
         viewer.setup(canvas);
-        viewer.loadVrm(buildUrl("/AvatarSample_B.vrm"));
+        viewer.loadVrm(buildUrl("/nuko0.vrm"));
 
         // Drag and DropでVRMを差し替え
-        canvas.addEventListener("dragover", function (event) {
-          event.preventDefault();
-        });
+        // canvas.addEventListener("dragover", function (event) {
+        //   event.preventDefault();
+        // });
 
         canvas.addEventListener("drop", function (event) {
           event.preventDefault();
